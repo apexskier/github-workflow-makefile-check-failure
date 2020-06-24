@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -efu -o pipefail
+
+if make -s foobar 2>/dev/null
+then
+  echo "shouldn't have succeeded"
+  exit 1
+fi
+
+exit 0
