@@ -6,5 +6,3 @@ then
   echo "shouldn't have succeeded"
   exit 1
 fi
-
-exit 0
