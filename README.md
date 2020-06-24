@@ -1,0 +1,1 @@
+This shouldn't show any check issues.
