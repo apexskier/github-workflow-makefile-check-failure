@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-if make -s foobar > /dev/null 2>/dev/null
+set -efu -o pipefail
+
+if make -s foobar 2>/dev/null
 then
   echo "shouldn't have succeeded"
   exit 1
